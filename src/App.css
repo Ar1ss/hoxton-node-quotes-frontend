@@ -40,3 +40,21 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+.quotes-list{
+  display: grid;
+  align-items: ;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+}
+.quote{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-content: space-between;
+  gap: 10rem;
+  text-align: start;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 1rem;
+}

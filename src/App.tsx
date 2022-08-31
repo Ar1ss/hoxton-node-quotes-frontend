@@ -14,11 +14,14 @@ function App() {
   return (
     <div className="App">
      <h1>Quotes</h1>
-      <ul>  
+      <ul className='quotes-list'>  
         {
-          quotes.map(quote => <li>
-            <h2> Quote : {quote.quote} </h2>
-            <h3> Name : {quote.quoteName} </h3>
+          quotes.map(quote => <li className='quote'>
+            <h2>  {quote.quote} </h2>
+            <h3>  {quote.quoteName}
+            <p>Age: {quote.age} </p> 
+             </h3>
+             <img width={200} src={quote.image} alt="" />
           </li>)
         }
       </ul>
